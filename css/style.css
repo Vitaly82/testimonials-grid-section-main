@@ -11,7 +11,7 @@
 }
 
 .container {
-	height: 90vh;
+	height: auto;
 	display: grid;
 	grid-template-columns: 375px;
 	/* grid-template-rows: minmax(375px, auto); */
