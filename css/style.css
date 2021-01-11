@@ -15,7 +15,7 @@
 	display: grid;
 	grid-template-columns: 375px;
 	/* grid-template-rows: minmax(375px, auto); */
-	margin: 5em 1em;
+	margin: 2em 2em;
 	grid-gap: 30px;
 	grid-template-areas:
 		"daniel"
@@ -156,6 +156,23 @@ span {
 
 /* media querys */
 
+@media (min-width: 900px) {
+
+	.container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0.5fr 0.5fr 0.5fr;
+		grid-template-areas:
+			"daniel jeanette"
+			"daniel patrick"
+			"kira patrick"
+			"kira jonathan";
+	}
+
+	.container {
+		margin: 5em;
+	}
+}
+
 @media (min-width: 1200px) {
 	.container {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -163,6 +180,9 @@ span {
 		grid-template-areas:
 			"daniel daniel jonathan kira"
 			"jeanette patrick patrick kira";
+	}
+	.container {
+		margin: 5em;
 	}
 }
 
